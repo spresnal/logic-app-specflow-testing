@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TimeForCoffee.Tests.Feature
+namespace TimeForCoffee.Tests.Feature.Utilities
 {
     public static class EnvVariables
     {
