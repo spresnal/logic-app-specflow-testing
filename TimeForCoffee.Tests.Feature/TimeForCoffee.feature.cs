@@ -124,7 +124,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table1.AddRow(new string[] {
                             "12:00"});
 #line 7
- testRunner.Given(@"I send a POST request to 'https://prod-78.eastus.logic.azure.com:443/workflows/336e6cfc4b1c4006ab19fe38402e62ee/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=hwtWJD-ccugxtRd7FeeYjEcdm8rSmSAvzfLkYgMHBd8' with the body", ((string)(null)), table1, "Given ");
+ testRunner.Given("I send a POST request to \'TimeForCoffee\' with the body", ((string)(null)), table1, "Given ");
 #line hidden
             }
             this.ScenarioCleanup();
