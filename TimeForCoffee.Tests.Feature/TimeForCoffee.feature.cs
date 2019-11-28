@@ -124,7 +124,19 @@ this.ScenarioInitialize(scenarioInfo);
                 table1.AddRow(new string[] {
                             "12:00"});
 #line 7
- testRunner.Given("I send a POST request to \'TimeForCoffee\' with the body", ((string)(null)), table1, "Given ");
+ testRunner.When("I send a POST request to \'TimeForCoffee\' with the body", ((string)(null)), table1, "When ");
+#line hidden
+#line 10
+ testRunner.And("I wait \'5\' seconds for execution to complete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "StepName",
+                            "Status"});
+                table2.AddRow(new string[] {
+                            "step1",
+                            "success"});
+#line 11
+ testRunner.Then("I can verify the following logic app events for \'TimeForCoffee\'", ((string)(null)), table2, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
