@@ -10,5 +10,7 @@
 
         public string StepName { get; }
         public string Status { get; }
+
+        public override string ToString() => $"{StepName}|{Status}";
     }
 }

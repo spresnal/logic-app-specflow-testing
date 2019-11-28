@@ -133,8 +133,38 @@ this.ScenarioInitialize(scenarioInfo);
                             "StepName",
                             "Status"});
                 table2.AddRow(new string[] {
-                            "step1",
-                            "success"});
+                            "manual",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Initialize_CupsOfCoffeeToDrink",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Get_hour_from_currentTime",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Should_get_a_cup_of_coffee",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Determine_number_of_cups",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Number_of_cups_to_drink",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Set_CupsOfCoffeeToDrink",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Until",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Drink_cup_of_coffee",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Decrement_CupsOfCoffeeToDrink",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Too_late_for_coffee",
+                            "Skipped"});
 #line 11
  testRunner.Then("I can verify the following logic app events for \'TimeForCoffee\'", ((string)(null)), table2, "Then ");
 #line hidden

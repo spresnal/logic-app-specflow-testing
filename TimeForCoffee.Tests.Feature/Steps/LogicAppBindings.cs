@@ -42,7 +42,7 @@ namespace TimeForCoffee.Tests.Feature.Steps
                 }
                 catch
                 {
-                    Assert.Fail($"Expected {expectedEvent}, but there were no more events...");
+                    Assert.Fail($"Expected to find ({expectedEvent}) and there were no more!");
                 }
                 Assert.AreEqual(expectedEvent.ToString(), actualEvent.ToString());
             }
