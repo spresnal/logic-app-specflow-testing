@@ -23,7 +23,8 @@ namespace TimeForCoffee.Tests.Feature.Steps
         }
 
         [Given(@"I send a POST request to '(.*)' with the body")]
-        public void GivenISendAPOSTRequestToWithTheBody(string uriKey, Table table)
+        [When(@"I send a POST request to '(.*)' with the body")]
+        public void ISendAPOSTRequestToWithTheBody(string uriKey, Table table)
         {
             var json = JsonConvert.SerializeObject(table.Rows.First());
             var content = new StringContent(json, Encoding.UTF8, "application/json");

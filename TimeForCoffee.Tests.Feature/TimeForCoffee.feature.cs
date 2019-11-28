@@ -124,7 +124,49 @@ this.ScenarioInitialize(scenarioInfo);
                 table1.AddRow(new string[] {
                             "12:00"});
 #line 7
- testRunner.Given("I send a POST request to \'TimeForCoffee\' with the body", ((string)(null)), table1, "Given ");
+ testRunner.When("I send a POST request to \'TimeForCoffee\' with the body", ((string)(null)), table1, "When ");
+#line hidden
+#line 10
+ testRunner.And("I wait \'5\' seconds for execution to complete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "StepName",
+                            "Status"});
+                table2.AddRow(new string[] {
+                            "manual",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Initialize_CupsOfCoffeeToDrink",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Get_hour_from_currentTime",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Should_get_a_cup_of_coffee",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Determine_number_of_cups",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Number_of_cups_to_drink",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Set_CupsOfCoffeeToDrink",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Until",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Drink_cup_of_coffee",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Decrement_CupsOfCoffeeToDrink",
+                            "Succeeded"});
+                table2.AddRow(new string[] {
+                            "Too_late_for_coffee",
+                            "Skipped"});
+#line 11
+ testRunner.Then("I can verify the following logic app events for \'TimeForCoffee\'", ((string)(null)), table2, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
